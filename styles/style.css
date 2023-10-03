@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Caprasimo&family=Exo+2:wght@300&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Tektur', cursive,sans-serif;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f68500;
+    margin-bottom: 5px;
+}
+.logo-image{
+    width: 220px;
+    height: 100px;
+    margin-top: 7px;
+    margin-bottom: 7px ;
+}
+.company_name{
+    font-size: 30px;
+    color: whitesmoke;
+    flex-basis: 40%;
+    font-weight: 700;
+}
+.nav{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu__link{
+    font-size:20px;
+    text-decoration: none;
+    color: whitesmoke;
+    border: whitesmoke 3px solid;
+    margin-right: 25px;
+    padding: 10px 15px 10px 15px;
+    border-radius:7px;
+}
+.menu__link:hover{
+    color:#f68500;
+    background:whitesmoke;
+    height: 50px;
+}
+.img-container{
+    background: #f68500;
+    width: 350px;
+    height: 250px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-container img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.container_items{
+    padding: 5px;
+}
+.images_window{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.content_article{
+    font-size: 14px;
+    padding: 5px 0 10px 10px;
+    font-weight: 500;
+}
+.content_text{
+    font-size: 12px;
+    color: #f68500;
+    text-align: center;
+}
+.content_text{
+    margin-bottom: 5px;
+}
+.content_card_1{
+    width: 400px;
+    color: #f68500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: whitesmoke;
+    border: #f68500 2px solid;
+    border-radius: 30px 60px 30px 60px;
+}
+.main{
+    margin-top: 17px;
+    flex: 1 1 auto;
+}
+.content_card_2{
+    width: 400px;
+    color: #f68500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: whitesmoke;
+    border: #f68500 2px solid;
+    border-radius: 30px 60px 30px 60px;
+}
+.content_card_1 a{
+    position: absolute;
+    text-decoration: none;
+    color: whitesmoke;
+    top: 40%;
+    left: 1px;
+    right: 1px;
+}
+.content_card_2 a{
+    text-decoration: none;
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 1px;
+    right: 1px;
+}
+.button_1{
+    position: absolute;
+    top: 11%;
+    left: 13%;
+    width: 25%;
+    height: 30%;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+}
+.button_1:hover{
+    opacity: 1;
+    font-size: 25px;
+    text-shadow: 5px 10px 2px whitesmoke;
+}
+.button_2{
+    position: absolute;
+    top: 11%;
+    right: 12%;
+    width: 25%;
+    height: 30%;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+}
+.button_2:hover{
+    opacity: 1;
+    font-size: 25px;
+    text-shadow: 5px 10px 2px whitesmoke;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #f68500;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer_left{
+    order: 2;
+}
+.footer_bottom{
+    align-self: center;
+}
+.footer_left{
+    margin-right: 25px;
+    margin-bottom: 10px;
+    margin-top:10px;
+
+}
+.footer_right{
+    margin-left: 25px;
+}
+@media screen and (max-width: 826px) {
+    .content_card_1 {
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+    .content_card_2 {
+
+        margin-bottom: 15px;
+    }
+    .nav{
+        flex-wrap: wrap;
+    }
+    .menu__link{
+        margin:10px 10px;
+    }
+    .button_1{
+        left: 23%;
+        top: 3%;
+        width: 55%;
+        height: 25%;
+    }
+    .button_2{
+        left: 23%;
+        top: 55%;
+        width: 55%;
+        height: 23%;
+    }
+    .company_name{
+        margin-right: 10px;
+    }
+}

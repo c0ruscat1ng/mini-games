@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Caprasimo&family=Exo+2:wght@300&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Tektur', cursive,sans-serif;
+}
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f68500;
+    margin-bottom: 5px;
+}
+.logo-image{
+    width: 130px;
+    height: 60px;
+    margin-top: 7px;
+    margin-bottom: 7px ;
+}
+.company_name{
+    font-size: 25px;
+    color: whitesmoke;
+    flex-basis: 40%;
+    font-weight: 700;
+}
+.nav{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu__link{
+    font-size:15px;
+    text-decoration: none;
+    color: whitesmoke;
+    border: whitesmoke 3px solid;
+    margin-right: 35px;
+    padding: 5px 10px 5px 10px;
+    border-radius:7px;
+    white-space:nowrap;
+}
+.menu__link:hover{
+    color:#f68500;
+    background:whitesmoke;
+    height: 38px;
+}
+#game{
+    display: block;
+    margin: 11px auto;
+    box-shadow: #f68500 1px 1px 10px 5px;
+}
+.main{
+    padding-bottom:5px ;
+}
+@media screen and (max-width: 826px) {
+    .nav{
+        flex-wrap: wrap;
+    }
+    .menu__link{
+        margin:10px 10px;
+    }
+    .company_name{
+        margin-right: 10px;
+    }
+}
