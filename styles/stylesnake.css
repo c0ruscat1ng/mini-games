@@ -7,6 +7,7 @@
 }
 body{
     font-family: 'Tektur', cursive,sans-serif;
+    min-height: 100vh;
 }
 .header{
     width: 100%;
@@ -56,8 +57,42 @@ body{
     box-shadow: #f68500 1px 1px 10px 5px;
 }
 .main{
-    padding-bottom:5px ;
+    padding-top:40px;
 }
+.modal{
+    z-index: 50;
+    height: 290px;
+    width: 500px;
+    background: #f68500;
+    color:whitesmoke;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    box-shadow: rgba(0,0,0,.5) 0 0 0 1000px;
+    padding: 30px 40px;
+    font-size: 30px;
+    text-align: center;
+    border-radius:20px ;
+    display: none;
+}
+.modal__btn{
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background: #f68500;
+    border: whitesmoke 3px solid;
+    border-radius: 10px;
+}
+.modal__btn:hover{
+    color:#f68500;
+    background:whitesmoke;
+    transform: scale(1.15);
+}
+.modal.active{
+    display: block;
+}
+
+
 @media screen and (max-width: 826px) {
     .nav{
         flex-wrap: wrap;
